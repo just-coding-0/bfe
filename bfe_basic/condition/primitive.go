@@ -1,4 +1,4 @@
-// Copyright (c) 2019 Baidu, Inc.
+// Copyright (c) 2019 The BFE Authors.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -28,9 +28,9 @@ import (
 )
 
 import (
-	"github.com/baidu/bfe/bfe_basic"
-	"github.com/baidu/bfe/bfe_basic/condition/parser"
-	"github.com/baidu/bfe/bfe_util/net_util"
+	"github.com/bfenetworks/bfe/bfe_basic"
+	"github.com/bfenetworks/bfe/bfe_basic/condition/parser"
+	"github.com/bfenetworks/bfe/bfe_util/net_util"
 	"github.com/spaolacci/murmur3"
 )
 
@@ -925,4 +925,16 @@ func (fetcher *ClientCANameFetcher) Fetch(req *bfe_basic.Request) (interface{}, 
 	}
 
 	return req.Session.TlsState.ClientCAName, nil
+}
+
+type ContextValueFetcher struct {
+	key string
+}
+
+func (f *ContextValueFetcher) Fetch(req *bfe_basic.Request) (interface{}, error) {
+	if req == nil || req.HttpRequest == nil || req.Context == nil || f.key == "" {
+		return nil, fmt.Errorf("fetcher: nil pointer")
+	}
+
+	return req.GetContext(f.key), nil
 }

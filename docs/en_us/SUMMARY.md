@@ -10,7 +10,7 @@
     * [Traffic routing](introduction/route.md)
     * [Traffic balancing](introduction/balance.md)
   * [Getting help](introduction/getting_help.md)
-  * [Version History](https://github.com/baidu/bfe/blob/master/CHANGELOG.md)
+  * [Version History](https://github.com/bfenetworks/bfe/blob/master/CHANGELOG.md)
 * Getting Started 
   * [Install](installation/install_from_source.md)
   * [User Guides](example/guide.md)
@@ -18,6 +18,7 @@
     * [Traffic blocking](example/block.md)
     * [Request redirect](example/redirect.md)
     * [Request rewrite](example/rewrite.md)
+    * [FastCGI procotol](example/fastcgi.md)
     * [TLS mutual authentication](example/client_auth.md)
 * [Installation](installation/install.md)
   * [Install from source](installation/install_from_source.md)
@@ -62,6 +63,7 @@
   * [mod_trace](modules/mod_trace/mod_trace.md)
   * [mod_trust_clientip](modules/mod_trust_clientip/mod_trust_clientip.md)
   * [mod_userid](modules/mod_userid/mod_userid.md)
+  * [mod_secure_link](modules/mod_secure_link/mod_secure_link.md)
 * Operations
   * [Command line options](operation/command.md)
   * [Environment variables](operation/env_var.md)
@@ -127,4 +129,4 @@
   * System related Condition Primitives
     * [Time](condition/system/time.md)
 
-Note: This documentation is working in process. Please help improve it by [filing issues](https://github.com/baidu/bfe/issues/new/choose) or [pull requests](development/submit_pr_guide.md).
+Note: This documentation is working in process. Please help improve it by [filing issues](https://github.com/bfenetworks/bfe/issues/new/choose) or [pull requests](development/submit_pr_guide.md).

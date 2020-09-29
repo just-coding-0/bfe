@@ -7,7 +7,7 @@
 - Get the source code and install
 
 ```bash
-$ go get github.com/baidu/bfe
+$ go get github.com/bfenetworks/bfe
 ```
 
 Executable object file location is ${GOPATH}/bin/bfe
@@ -21,10 +21,10 @@ Executable object file location is ${GOPATH}/bin/bfe
 
 ```bash
 $ cd ${GOPATH}/bin/ 
-$ ./bfe -c ${GOPATH}/src/github.com/baidu/bfe/conf/
+$ ./bfe -c ${GOPATH}/src/github.com/bfenetworks/bfe/conf/
 ```
 
 ## Further reading
-
+- Get familiar with [Command options](../operation/command.md)
 - Get started with [Beginner's Guide](../example/guide.md)
 

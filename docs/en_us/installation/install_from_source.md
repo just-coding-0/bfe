@@ -6,7 +6,7 @@
 
 ## Download source code
 ```bash
-$ git clone https://github.com/baidu/bfe
+$ git clone https://github.com/bfenetworks/bfe
 ```
 
 ## Build
@@ -43,6 +43,6 @@ $ ./bfe -c ../conf -l ../log
 ```
 
 ## Further reading
-
+- Get familiar with [Command options](../operation/command.md)
 - Get started with [Beginner's Guide](../example/guide.md)
                                            

@@ -2,7 +2,7 @@
 
 ## 下载文件
 
-- 从这里[下载BFE](https://github.com/baidu/bfe/releases)在各平台的最新版本
+- 从这里[下载BFE](https://github.com/bfenetworks/bfe/releases)在各平台的最新版本
 
 ## 安装
 
@@ -22,4 +22,5 @@ $ ./bfe -c ../conf -l ../log
 ```
 
 ## 下一步
-了解[基本功能配置使用](../example/guide.md)
+* 了解[命令行参数](../operation/command.md)
+* 了解[基本功能配置使用](../example/guide.md)
